@@ -1,0 +1,39 @@
+﻿@model login.Models.Employeeviewmodel
+    @{ 
+        ViewBag.Title = "Create";
+    }
+<div class="Container" style="width:400px; height:500px">
+    @using (Html.BeginForm("create", "Emp", FormMethod.Post))
+    {
+       // @Html.DropDownList("Emp_id_fk", null, htmlAttributes: new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Emp_Id, "", new { @class = "error" })
+        @Html.TextBoxFor(x => x.Emp_Name, new { @class = "form control", @placeholder = "Name" })
+        @Html.TextBoxFor(x => x.Joining_Date, new { @class = "form control", @placeholder = "date" })
+        @Html.TextBoxFor(x => x.Dob, new { @class = "form control", @placeholder = "dob" })
+
+        @Html.TextBoxFor(x => x.Salary, new { @class = "form control", @placeholder = "Salary" })
+
+        @Html.TextBoxFor(x => x.Practice, new { @class = "form control", @placeholder = "Practice" })
+
+        @Html.TextBoxFor(x => x.Designation_Lancesoft, new { @class = "form control", @placeholder = "Designation_Lancesoft" })
+
+        @Html.TextBoxFor(x => x.Client_Name, new { @class = "form control", @placeholder = "Client_Name" })
+
+        @Html.TextBoxFor(x => x.Po_start_Date, new { @class = "form control", @placeholder = "Po_start_Date" })
+        @Html.TextBoxFor(x => x.Po_end_date, new { @class = "form control", @placeholder = "Po_end_date" })
+        @Html.TextBoxFor(x => x.Billing, new { @class = "form control", @placeholder = "Billing" })
+        @Html.TextBoxFor(x => x.Desination_at_client, new { @class = "form control", @placeholder = "Desination_at_client" })
+        @Html.TextBoxFor(x => x.Food_cost, new { @class = "form control", @placeholder = "food" })
+        @Html.TextBoxFor(x => x.Cubical_cost, new { @class = "form control", @placeholder = "Cubical_cost" })
+        @Html.TextBoxFor(x => x.Transport_cost, new { @class = "form control", @placeholder = "transport" })
+        <input type="submit" value="submit" class="btn btn-block btn-danger" />
+    }
+
+
+
+    @Html.ActionLink("Back", "Index", "Employee_Details")
+
+
+
+
+</div>

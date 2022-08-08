@@ -1,0 +1,65 @@
+﻿@model login.Models.Client_Details
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<div>
+   
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Desination_at_client)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desination_at_client)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Billing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Billing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Po_start_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Po_start_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Po_end_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Po_end_date)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Employee_details.Emp_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee_details.Emp_Name)
+        </dd>*@
+
+    </dl>
+</div>
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Client_Id }) |*@
+    @*@Html.ActionLink("Back to List", "Index")
+</p>*@

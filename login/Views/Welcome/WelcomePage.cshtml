@@ -1,0 +1,32 @@
+﻿@model IEnumerable<login.Models.Employee_details>
+
+@{
+    ViewBag.Title = "WelcomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div style="padding:5px;">
+    <div style="float:right">
+        <h2>
+            Welcome :@User.Identity.Name
+        </h2>
+    </div>
+    <div>
+
+        @Html.ActionLink("Client Details", "Index", "Client_Details")
+
+
+        @Html.ActionLink("Bill Details", "Index", "Bill_")
+        @Html.ActionLink("Employee Details", "Index", "Employee_Details")
+
+
+    </div>
+
+</div>
+@*<div>
+    @Html.Action("Index","Employee_details",Model)
+   
+</div>*@
+

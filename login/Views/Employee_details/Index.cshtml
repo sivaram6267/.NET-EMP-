@@ -1,0 +1,194 @@
+﻿
+@model login.ViewModel.GetAllDetails
+
+
+
+ <h1 style="color:blue;">Employees Details</h1>
+ @*<h1>
+     <input id="login" type="submit" onclick="location.href='@url.action("welcomepage", "welcome")'" style="" width="200" height="34" value="home" />
+
+ </h1>*@
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Emp_Name")
+            </th>
+            <th>
+                @Html.DisplayName("Joining_Date")
+            </th>
+            <th>
+                @Html.DisplayName("Dob")
+            </th>
+            <th>
+                @Html.DisplayName("Salary")
+            </th>
+            <th>
+                @Html.DisplayName("Practice")
+            </th>
+            <th>
+                @Html.DisplayName("Designation_Lancesoft")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.employe)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Emp_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Joining_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dob)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Salary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Practice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Designation_Lancesoft)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Emp_Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Emp_Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Emp_Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+
+
+    <table class="table">
+
+        <tr>
+
+            <th>
+                @Html.DisplayName("Cubical_cost")
+            </th>
+            <th>
+                @Html.DisplayName("Food_cost")
+            </th>
+            <th>
+                @Html.DisplayName("Transport_cost")
+            </th>
+            <th>
+                @Html.DisplayName("Emp_Name")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.billdetails)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cubical_cost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Food_cost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Transport_cost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee_details.Emp_Name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Billing_Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Billing_Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Billing_Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Desination_at_client")
+            </th>
+            <th>
+                @Html.DisplayName("Client_Name")
+            </th>
+            <th>
+                @Html.DisplayName("Billing")
+            </th>
+            <th>
+                @Html.DisplayName("Po_start_Date")
+            </th>
+            <th>
+                @Html.DisplayName("Po_end_date")
+            </th>
+            <th>
+                @Html.DisplayName("Emp_Name")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.clientDetails)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Desination_at_client)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Client_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Billing)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Po_start_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Po_end_date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee_details.Emp_Name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Client_Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Client_Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Client_Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</body>
+</html>

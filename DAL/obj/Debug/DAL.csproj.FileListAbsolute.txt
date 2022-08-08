@@ -1,0 +1,24 @@
+C:\Users\Gurram Sujatha\source\repos\login\DAL\bin\Debug\DAL.dll.config
+C:\Users\Gurram Sujatha\source\repos\login\DAL\bin\Debug\DAL.dll
+C:\Users\Gurram Sujatha\source\repos\login\DAL\bin\Debug\DAL.pdb
+C:\Users\Gurram Sujatha\source\repos\login\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Gurram Sujatha\source\repos\login\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gurram Sujatha\source\repos\login\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Gurram Sujatha\source\repos\login\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gurram Sujatha\source\repos\login\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Gurram Sujatha\source\repos\login\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Gurram Sujatha\source\repos\login\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Gurram Sujatha\source\repos\login\DAL\obj\Debug\DAL.dll
+C:\Users\Gurram Sujatha\source\repos\login\DAL\obj\Debug\DAL.pdb
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\bin\Debug\DAL.dll.config
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\bin\Debug\DAL.dll
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\bin\Debug\DAL.pdb
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\obj\Debug\DAL.dll
+C:\Users\Gurram Sujatha\source\repos\login (2)\login\DAL\obj\Debug\DAL.pdb
